@@ -2,8 +2,8 @@
     class test {
 
         static String USERNAME = "test-login";
-        static String PASSWORD = "test-password";
-        static String LOGIN_SERVER_NAME = "test-login-server";
+       static String PASSWORD = System.getenv("PASSWORD");
+static String LOGIN_SERVER_NAME = System.getenv("LOGIN_SERVER_NAME");
         static String EXPECTED_ACCESS_TOKEN = "sample-access-token";
         static String LIST_REPOS_JSON = "{\"repositories\": [\"repo1\", \"repo2\"]}";
         static String REPO_NAME = "repo";
